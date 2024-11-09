@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News App</title>
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo">News APP</a>
+      <nav>
+        <ul>
+          <li><a href="#" id="technologyLink" class="active">Technology</a></li>
+          <li><a href="#" id="scienceLink">Science</a></li>
+          <li><a href="#" id="contactLink">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact">
+    <div class="container">
+      <form id="contact-form">
+        <input type="email" class="main-input" placeholder="Your Email" name="email" required>
+        <textarea class="main-input" placeholder="Your Message" name="message" required></textarea>
+        <button type="submit" class="main-input"><span>Send Message</span> <i class="fas fa-check"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <div id="notification" class="notification"></div>
+
+  <section class="cards-section">
+    <div class="container" id="news-container"></div>
+    <div class="pagination">
+      <button class="btn" type="button" id="prevPage" disabled>Previous</button>
+      <button class="btn" type="button" id="nextPage">Next</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="copyright">We Are Social</p>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>2024 News App. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./node_modules/@emailjs/browser/dist/email.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
